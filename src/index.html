@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lo-Fi</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, viewport-fit=cover" />
+	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="white" /> -->
+	<!-- <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> -->
+	<link rel="manifest" href="static/pwa/site.webmanifest">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="static/pwa/apple-touch-icon@180.png">
+	<link rel="apple-touch-icon" sizes="192x192" href="static/pwa/apple-touch-icon@192.png">
+	<link rel="apple-touch-icon" sizes="512x512" href="static/pwa/apple-touch-icon@512.png">
+	<meta name="theme-color" content="#f2f2f2">
+
+	<link rel="stylesheet" href="static/styles.scss">
+</head>
+<body ontouchstart="">
+	
+	<div id="player"></div>
+
+	<div class="container">
+		<button class="btn play-state" id="button-play-toggle" data-state="PAUSED">
+			<svg xmlns="http://www.w3.org/2000/svg" class="icon play" viewBox="0 0 448 520">
+				<path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" />
+			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" class="icon pause" viewBox="0 0 448 512">
+				<path d="M144 479H48c-26.5 0-48-21.5-48-48V79c0-26.5 21.5-48 48-48h96c26.5 0 48 21.5 48 48v352c0 26.5-21.5 48-48 48zm304-48V79c0-26.5-21.5-48-48-48h-96c-26.5 0-48 21.5-48 48v352c0 26.5 21.5 48 48 48h96c26.5 0 48-21.5 48-48z" />
+			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" class="icon buffering" viewBox="0 0 512 520">
+				<path class="loading" d="M281.362982,1.34073057 C281.362982,1.34073057 281.362982,1.34073057 281.362982,1.34073057 C410.361961,14.5366018 511,123.515575 511,256 C511,397.384896 396.385769,512 255.001949,512 C122.686073,512 14.6755479,407.832485 1.3486321,278.653667 C1.31785647,278.355357 1.28731177,278.047833 1.25699801,277.731096 C0.213060656,266.823145 8.20940365,257.134208 19.1173524,256.090249 C19.7456438,256.030117 20.3764466,256 21.0076088,256 C21.0076088,256 21.0076088,256 21.0076088,256 C44.7231038,256 78.7127407,256 122.976519,256 C122.976519,256 122.976519,256 122.976519,256 C134.386854,256 144.10575,264.291541 145.903012,275.559442 C146.018708,276.284785 146.138393,276.963517 146.262069,277.595638 C156.303377,328.917845 201.41405,368 255.573374,368 C317.113206,368 367.001096,318.111729 367.001096,256.571429 C367.001096,204.207291 330.467701,160.300425 281.660614,148.370903 C280.927762,148.191778 280.142307,148.01806 279.304249,147.849749 C265.170879,145.011291 255.001949,132.597043 255.001949,118.181461 C255.001949,118.181461 255.001949,118.181461 255.001949,118.181461 C255.001949,78.4087826 255.001949,47.6112753 255.001949,25.7889395 C255.001949,25.5774481 255.001949,25.3620543 255.001949,25.1427581 C255.001931,11.9286621 265.714072,1.21652077 278.928168,1.21652077 C279.741356,1.21652077 280.554016,1.25797784 281.362982,1.34073057 Z" />
+			</svg>
+		</button>
+	</div>
+
+	<script src="static/main.js"></script>
+</body>
+</html>
